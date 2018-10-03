@@ -1,7 +1,7 @@
 %global package_name ucsmsdk
 
 Name:           python-%{package_name}
-Version:        0.9.3.2
+Version:        0.9.4
 Release:        1%{?dist}
 Summary:        Python SDK for Cisco UCS Manager
 License:        ASL 2.0
@@ -12,6 +12,7 @@ BuildArch:      noarch
 
 BuildRequires:  python2-devel
 BuildRequires:  python2-pyparsing
+BuildRequires:  python2-setuptools
 
 %global _description\
 Python development kit for Cisco UCS Manager
@@ -40,5 +41,9 @@ Requires: python2-pyparsing
 %license LICENSE
 
 %changelog
+* Tue Oct 02 2018 Bradley Jones <bradjone@cisco.com> 0.9.4-1
+- New upstream version 0.9.4
+- Missing build dependency python2-setuptools
+
 * Thu Jun 14 2018 Sandhya Dasu <sadasu@cisco.com> 0.9.3.2-1
 - Initial RPM release
